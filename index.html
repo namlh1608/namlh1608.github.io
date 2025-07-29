@@ -54,18 +54,28 @@
 					<nav class="sidebar collapsed d-flex flex-column flex-shrink-0 position-fixed" id="myLeftMenu">
 						<div class="nav flex-column">
 							<!-- ------------.------------ -->
-							<!-- ............ Start - Quản Lý ............ -->
+							<!-- ............ Start - Điều Độ ............ -->
 							<a href="" class="sidebar-link text-decoration-none p-3 paMenu" id="paMenu_1" idTarget="chMenu_1">
-								<i class="fa-brands fa-web-awesome fa-lg me-3"></i>
-								<span class="hide-on-collapse">Quản Lý</span>
+								<i class="fa-solid fa-truck-fast fa-lg me-3"></i>
+								<span class="hide-on-collapse">ĐIỀU ĐỘ</span>
 							</a>
 							<div class="chMenu" id="chMenu_1">
 								<div class="nav flex-column" >
-									<!-- -==- Tool -==- -->
-									<a href="<?php echo $base_URL; ?>vn/tool/recorddata" class="sidebar-link text-decoration-none p-3">
-										<i class="fa-solid fa-file-arrow-up me-3"></i>
-										<span class="hide-on-collapse">Import Data</span>
+									<!-- -==- Nhận Dơn Hàng -==- -->
+									<a href="" class="sidebar-link text-decoration-none p-3">
+										<i class="fa-solid fa-file-circle-plus me-3"></i>
+										<span class="hide-on-collapse">Nhận Đơn Hàng</span>
 									</a>
+									<!-- -==- Loại Dơn Hàng -==- -->
+									<div class="chMenu1" id="chMenu_1a">
+										<div class="nav flex-column" >
+											<!-- -==- Nhận Dơn Hàng -==- -->
+											<a href="" class="sidebar-link text-decoration-none p-3">
+												<i class="fa-solid fa-file-circle-plus me-3"></i>
+												<span class="hide-on-collapse">EDO</span>
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 							<!-- ............ End - Quản Lý ............ -->
@@ -204,7 +214,6 @@
 				const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 			}
             $(document).ready(function() {
-				initWindowScrool();
                 generateTooltip();
 				$("#loading-page").fadeOut();
             });
