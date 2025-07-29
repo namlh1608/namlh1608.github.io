@@ -15,7 +15,7 @@
 :root {
     --width_left_header: 320px;
     --width_left_panel: 80px;
-	--height_header: 80px;
+	--height_header: 0px;
 	--bg-color: #e7e7e7;
 	--color_white: #ffffff; /* white */
     --color_blue: #03a9f4; /* Blue */
