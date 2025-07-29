@@ -13,6 +13,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+		<script src="https://namlh1608.github.io/asset/js/default/common.js"></script>
 		
 		<script type="text/javascript" crossorigin="anonymous">
 			<?php /* :::::::::::: * :::::::::::: */ ?>
@@ -38,6 +39,121 @@
 	<body>
 		<?php /* ---------------------------------------------------------------- */ ?>	
 		<?php /* |||||||||||| START - WRAPPER |||||||||||| */ ?>
+		<div class="container-fluid" id="wrapper">					
+			<div class="row">			
+				<?php /* ============.============ */ ?>
+				<?php /* :::::::::::: START - Left Wrapper :::::::::::: */ ?>
+				<div class="col" id="left-wrapper">
+					<?php /* ............ * ............ */ ?>
+					<?php /* ============... MENU ...============ */ ?>
+					<nav class="sidebar collapsed d-flex flex-column flex-shrink-0 position-fixed" id="myLeftMenu">
+						<div class="nav flex-column">
+							<?php /* ------------.------------ */ ?>
+							<?php /* ............ Start - Quản Lý ............ */ ?>
+							<a href="" class="sidebar-link text-decoration-none p-3 paMenu" id="paMenu_1" idTarget="chMenu_1">
+								<i class="fa-brands fa-web-awesome fa-lg me-3"></i>
+								<span class="hide-on-collapse">Quản Lý</span>
+							</a>
+							<div class="chMenu" id="chMenu_1">
+								<div class="nav flex-column" >
+									<?php /* -==- Tool -==- */ ?>
+									<a href="<?php echo $base_URL; ?>vn/tool/recorddata" class="sidebar-link text-decoration-none p-3">
+										<i class="fa-solid fa-file-arrow-up me-3"></i>
+										<span class="hide-on-collapse">Import Data</span>
+									</a>
+								</div>
+							</div>
+							<?php /* ............ End - Quản Lý ............ */ ?>
+							<?php /* ------------.------------ */ ?>
+							<?php /* ------------.------------ */ ?>	
+							<?php /* ............ Start - Giao Dịch ............ */ ?>
+							<a href="" class="sidebar-link text-decoration-none p-3 paMenu" id="paMenu_2" idTarget="chMenu_2">
+								<i class="fa-solid fa-money-bill-transfer fa-lg me-3"></i>
+								<span class="hide-on-collapse">Giao Dịch</span>
+							</a>
+							<div class="chMenu" id="chMenu_2">
+								<div class="nav flex-column" >
+									<?php /* -==- Hoá Đơn Bán Hàng -==- */ ?>
+									<a href="<?php echo $base_URL; ?>vn/bill/export/add" class="sidebar-link text-decoration-none p-3">
+										<i class="fa-solid fa-file-export me-3"></i>
+										<span class="hide-on-collapse">Hoá Đơn Bán Hàng</span>
+									</a>
+									<?php /* -==- Hoá Đơn Nhập Hàng -==- */ ?>
+									<a href="" class="sidebar-link text-decoration-none p-3">
+										<i class="fa-solid fa-file-import me-3"></i>
+										<span class="hide-on-collapse">Hoá Đơn Nhập Hàng</span>
+									</a>
+									<?php /* ==- Xuất Hàng -==- */ ?>
+									<a href="<?php echo $base_URL; ?>vn/bill/export/delivery" class="sidebar-link text-decoration-none p-3">
+										<i class="fa-solid fa-dolly me-3"></i>
+										<span class="hide-on-collapse">Xuất Hàng</span>
+									</a>
+									<?php /* -==- Nhập Hàng -==- */ ?>
+									<a href="" class="sidebar-link text-decoration-none p-3">
+										<i class="fa-solid fa-cart-flatbed me-3"></i>
+										<span class="hide-on-collapse">Nhập Hàng</span>
+									</a>
+								</div>
+							</div>
+							<?php /* ............ End - Giao Dịch ............ */ ?>
+							<?php /* ------------.------------ */ ?>
+							<?php /* ------------.------------ */ ?>	
+							<?php /* ............ Start - Hàng Hoá ............ */ ?>
+							<a href="" class="sidebar-link text-decoration-none p-3 paMenu" id="paMenu_3" idTarget="chMenu_3">
+								<i class="fa-solid fa-boxes-stacked fa-lg me-3"></i>
+								<span class="hide-on-collapse">Hàng Hoá</span>
+							</a>
+							<div class="chMenu" id="chMenu_3">
+								<div class="nav flex-column" >
+									<?php /* -==- Danh Sách Nhóm Sản Phẩm -==- */ ?>
+									<a href="" class="sidebar-link text-decoration-none p-3">
+										<i class="fa-solid fa-clipboard-list me-3"></i>
+										<span class="hide-on-collapse">Danh Mục Sản Phẩm</span>
+									</a>
+									<?php /* -==- Danh Sách Sản Phẩm -==- */ ?>
+									<a href="" class="sidebar-link text-decoration-none p-3">
+										<i class="fa-solid fa-list-check me-3"></i>
+										<span class="hide-on-collapse">Danh Sách Sản Phẩm</span>
+									</a>
+								</div>
+							</div>
+							<?php /* ............ End - Hàng Hoá ............ */ ?>
+							<?php /* ------------.------------ */ ?>
+							<?php /* ------------.------------ */ ?>
+							<?php /* ............ Start - Báo Cáo ............ */ ?>
+							<a href="" class="sidebar-link text-decoration-none p-3">
+								<i class="fa-solid fa-chart-line fa-lg me-3"></i>
+								<span class="hide-on-collapse">Báo Cáo</span>
+							</a>
+							<?php /* ............ End - QBáo Cáo ............ */ ?>
+							<?php /* ------------.------------ */ ?>
+						</div>
+					</nav>
+					<?php /* ============... MENU ...============ */ ?>
+					<?php /* ............ * ............ */ ?>
+				</div>
+				<?php /* :::::::::::: END - Left Wrapper :::::::::::: */ ?>
+				<?php /* ============.============ */ ?>
+				<?php /* ============.============ */ ?>
+				<?php /* :::::::::::: START - Right Wrapper :::::::::::: */ ?>
+				<div class="col-auto" id="right-wrapper">
+					<?php echo $the_contents;?>
+				</div>
+				<?php /* :::::::::::: END - Right Wrapper :::::::::::: */ ?>
+				<?php /* ============.============ */ ?>
+			</div>
+			<?php /* |||||||||||| END - WRAPPER |||||||||||| */ ?>				
+			<?php /* ---------------------------------------------------------------- */ ?>
+			<?php /* ---------------------------------------------------------------- */ ?>
+			<?php /* |||||||||||| START - FOOTER |||||||||||| */ ?>
+			<div class="row" id="footer">
+			
+			</div>
+			<?php /* |||||||||||| END - FOOTER |||||||||||| */ ?>
+			<?php /* ---------------------------------------------------------------- */ ?>
+		</div>
+		<?php /* |||||||||||| END - WRAPPER |||||||||||| */ ?>
+		<?php /* ---------------------------------------------------------------- */ ?>	
 		<div class="container-fluid" id="wrapper">	
 	</body>
 </html>
