@@ -159,6 +159,55 @@
 		</div>
 		<!-- |||||||||||| END - WRAPPER |||||||||||| -->
 		<!-- ---------------------------------------------------------------- -->	
-		<div class="container-fluid" id="wrapper">	
+		<script type="text/javascript" crossorigin="anonymous">			
+			/* ---------------------------------------------------------------- */
+			var enterMenu = 0;
+			$("#myLeftMenu").on("mouseenter", function() { 
+				if(enterMenu === 0) {
+					toggleSidebar();				
+				}
+				enterMenu = 1;
+			});
+			$("#myLeftMenu").on("mouseleave", function() { 
+				if(enterMenu === 1) {
+					toggleSidebar();				
+				}
+				enterMenu = 0;
+			});
+			
+			
+			$(".paMenu").each(function() {
+				var enterCH = 0;
+				var c_id = $(this).attr("idTarget");
+				$(this).on('mouseenter', function() { 
+					if(enterCH === 0) {
+						$("#" + c_id).slideDown("fast");				
+					}
+					enterCH = 1;					
+				});	
+				$("#myLeftMenu").on("mouseleave", function() { 
+					if(enterCH === 1) {
+						$("#" + c_id).slideUp("fast");				
+					}
+					enterCH = 0;
+				});			
+			});
+			
+			function toggleSidebar() {
+				const sidebar = document.querySelector('.sidebar');
+				sidebar.classList.toggle('collapsed');
+			}
+			/* ---------------------------------------------------------------- */
+			/* ---------------------------------------------------------------- */
+			function generateTooltip() {
+				const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+				const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+			}
+            $(document).ready(function() {
+				initWindowScrool();
+                generateTooltip();
+				$("#loading-page").fadeOut();
+            });
+        </script>
 	</body>
 </html>
