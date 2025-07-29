@@ -4,11 +4,40 @@
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta id="viewport" name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-        <link rel="shortcut icon" type="assets/my_logo.ico" />
+        <link rel="shortcut icon" type="image/png" href="https://namlh1608.github.io/asset/my_logo.ico" />
         <title> Nguyen Hoang Phat Logistic </title>
         <meta name="description" content="BASE Project">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+		<link href="https://namlh1608.github.io/asset/css/default/common.css" rel="stylesheet" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+		
+		<script type="text/javascript" crossorigin="anonymous">
+			<?php /* :::::::::::: * :::::::::::: */ ?>
+			<?php /* :::::::::::: START - Scale Window :::::::::::: */ ?>
+            var min_window_width = 768;
+            var logo_width = 352;
+            $(window).on("load", function () {
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                    var ww = ($(window).width() < window.screen.width) ? $(window).width() : window.screen.width; /* get proper width */
+                    var mw = min_window_width; /* min width of site */
+                    var ratio = ww / mw; /* calculate ratio */
+                    if (ww < mw) { /* smaller than minimum size */
+                        $("#viewport").attr("content", "initial-scale=" + ratio + ", maximum-scale=" + ratio + ", minimum-scale=" + ratio + ", user-scalable=yes, width=" + ww);
+                    } else { /* regular size */
+                        $("#viewport").attr("content", "initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, width=" + ww);
+                    }
+                }
+            });
+			<?php /* :::::::::::: END - Scale Window :::::::::::: */ ?>
+			<?php /* :::::::::::: * :::::::::::: */ ?>
+        </script>
 	</head>
 	<body>
-		Hello World!
+		<?php /* ---------------------------------------------------------------- */ ?>	
+		<?php /* |||||||||||| START - WRAPPER |||||||||||| */ ?>
+		<div class="container-fluid" id="wrapper">	
 	</body>
 </html>
